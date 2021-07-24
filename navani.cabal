@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a5c995d8b22292bee0c41ad0efd62c217f819f90244c6857a265c624704b0d38
+-- hash: 153e54e670fa6677eb588d0ee7b5d46ae00f90d9971bed19e775b8b9f7475a42
 
 name:           navani
 version:        0.1.0.0
@@ -27,9 +27,10 @@ source-repository head
 
 library
   exposed-modules:
-      Algos1
       Lib
       Server
+      Templates.Elements.Custom
+      Templates.Elements.PageWrapper
       Templates.Projects
   other-modules:
       Paths_navani
@@ -42,7 +43,6 @@ library
     , containers
     , http-media
     , http-types
-    , lucid
     , prettyprinter
     , raw-strings-qq
     , servant
@@ -66,7 +66,6 @@ executable navani-exe
     , containers
     , http-media
     , http-types
-    , lucid
     , navani
     , prettyprinter
     , raw-strings-qq
@@ -92,7 +91,6 @@ test-suite navani-test
     , containers
     , http-media
     , http-types
-    , lucid
     , navani
     , prettyprinter
     , raw-strings-qq

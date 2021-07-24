@@ -28,7 +28,7 @@ dependencies:
 - bytestring
 - prettyprinter
 - servant
-- lucid
+# - lucid
 - http-media
 - http-types
 - servant-server
