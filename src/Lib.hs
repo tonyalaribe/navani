@@ -72,7 +72,7 @@ exjson = [r|{
     }|]
 
 {--
-- Hard things i had to solve
+    - Hard things i had to solve
     - Parsing json with either to get error message
     - Adding dependencies
     - GHCI workflow

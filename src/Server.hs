@@ -16,16 +16,16 @@ import Servant.Server
 import Servant.Server.StaticFiles (serveDirectoryWebApp)
 import Templates.Projects (projectsPage)
 import Data.Char (toLower)
-import Control.Monad.Reader hiding (ask)
-import Control.Monad.Trans.Reader
-import Data.Pool
+-- import Control.Monad.Reader hiding (ask)
+-- import Control.Monad.Trans.Reader
+-- import Data.Pool
 
 -- Postgresql Requires
-import Opaleye
-import Database.PostgreSQL.Simple
-import Data.Profunctor.Product (p3)
-import Control.Arrow hiding (app)
-import Control.Monad.IO.Class
+-- import Opaleye
+-- import Database.PostgreSQL.Simple
+-- import Data.Profunctor.Product (p3)
+-- import Control.Arrow hiding (app)
+-- import Control.Monad.IO.Class
 
 -- Config
 serverport = 8081

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 153e54e670fa6677eb588d0ee7b5d46ae00f90d9971bed19e775b8b9f7475a42
+-- hash: 18c1c1e060487f35640199b3d62488e5e31d06e732304c0e8456018f6e9bf172
 
 name:           navani
 version:        0.1.0.0
@@ -43,6 +43,7 @@ library
     , containers
     , http-media
     , http-types
+    , postgresql-simple
     , prettyprinter
     , raw-strings-qq
     , servant
@@ -67,6 +68,7 @@ executable navani-exe
     , http-media
     , http-types
     , navani
+    , postgresql-simple
     , prettyprinter
     , raw-strings-qq
     , servant
@@ -80,6 +82,7 @@ test-suite navani-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      TreeSpec
       Paths_navani
   hs-source-dirs:
       test
@@ -92,10 +95,15 @@ test-suite navani-test
     , http-media
     , http-types
     , navani
+    , postgresql-simple
     , prettyprinter
     , raw-strings-qq
     , servant
     , servant-server
+    , tasty
+    , tasty-discover
+    , tasty-hspec
+    , tasty-hunit
     , text
     , type-of-html
     , warp

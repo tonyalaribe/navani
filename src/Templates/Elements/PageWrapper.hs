@@ -26,7 +26,7 @@ pageWrapper title buttons content =
             Title :> "API Toolkit"
           Body :@ ClassA := "bg-gray-100" :> do
             Div :@ ClassA := "h-screen flex overflow-hidden" :> do
-              desktopSidebar
+              Div :> desktopSidebar
               pageCore title buttons content
 
 pageCore title buttons content =
